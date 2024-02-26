@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Previews</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/premium-photo/abstract-with-neon-lights-illustration_441797-1166.jpg?w=996'); /* Replace 'your-background-image.jpg' with your actual image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .game-preview {
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: top;
+            transition: box-shadow 0.3s;
+        }
+
+        .game-preview img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .game-preview h2 {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .game-preview p {
+            color: #555;
+            font-size: 0.8em;
+        }
+
+        /* Optional: Add hover effect for better user experience */
+        .game-preview:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="game-container" id="left-container">
+    <!-- Left side previews -->
+    <!-- Duplicate the following game preview code block as needed -->
+    <div class="game-preview">
+        <a href="game109.html"> <!-- Add a link around the image -->
+            <img src="game109.webp" alt="game 109">
+        </a>
+    
+    </div>
+
+    <div class="game-preview">
+        <a href="game110.html">
+            <img src="game110.webp" alt="game 110">
+        </a>
+      
+    </div>
+
+    <!-- Duplicate the above block as needed for games 46 to 47 -->
+
+    <!-- Script to generate game previews from 48 to 80 -->
+    <script>
+        for (let i = 111; i <= 136; i++) {
+            document.write(`
+                <div class="game-preview">
+                    <a href="game${i}.html">
+                        <img src="game${i}.webp" alt="game ${i}">
+                    </a>
+                   
+                </div>
+            `);
+        }
+    </script>
+
+</div>
+
+<!-- Add more containers or modify existing ones as needed -->
+
+</body>
+</html>

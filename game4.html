@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Game</title>
+</head>
+<body>
+
+<div id="game-container">
+    <script src="https://cdn.htmlgames.com/embed.js?game=AcidRain&amp;bgcolor=white"></script>
+</div>
+
+<script>
+    // Set the width and height after the script has loaded
+    window.addEventListener('DOMContentLoaded', function() {
+        var iframe = document.querySelector('#game-container iframe');
+        if (iframe) {
+            iframe.width = 1500; // Set your preferred width
+            iframe.height = 600; // Set your preferred height
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gameonmvp.com/home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t3.ftcdn.net/jpg/05/99/53/58/360_F_599535831_pwQFVG0qtf6ksLXeVTnUwFMvoW5H0WiS.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+        }
+
+        #logo {
+            width: 50px; /* Adjust the width of your logo */
+            height: auto;
+        }
+
+        #banner {
+            max-width: 100%; /* Make the banner responsive */
+            max-height: 200px; /* Set a maximum height for the banner */
+            animation: fadeIn 2s ease-in-out; /* Add animation for banner */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #categories {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            width: 100%;
+        }
+
+        #categories a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        #categories a:hover {
+            color: #FFD700;
+        }
+
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .game-preview {
+            width: 180px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: top;
+            transition: box-shadow 0.3s;
+        }
+
+        .game-preview img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .game-preview h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .game-preview p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .game-preview:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-preview:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Media Query for Mobile */
+        @media only screen and (max-width: 600px) {
+            .game-preview {
+                width: calc(50% - 20px); /* Adjusted width for better mobile display */
+                margin: 10px;
+            }
+
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo {
+                margin-bottom: 10px;
+            }
+
+            #categories {
+                flex-wrap: wrap;
+            }
+
+            #categories a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo"   src="TMC_logo.gif" alt="Logo">
+        <img id="banner" src="BAN.gif" alt="Animated Banner">
+    </div>
+
+    <div id="categories">
+        <a href="multiplayer_games.html">Multiplayer</a>
+        <a href="new_games.html">New</a>
+        <a href="action_games.html">Action</a>
+        <a href="arcade_games.html">Arcade</a>
+        <a href="adventure_games.html">Adventure</a>
+        <a href="strategy_games.html">Strategy</a>
+        <a href="sports_racing_games.html">Sports</a>
+        <a href="puzzle_logic_games.html">Puzzle & Logic</a>
+        <!-- Add more categories as needed -->
+    </div>
+
+    <div class="game-container">
+        <!-- Game Previews Start -->
+
+        <!-- Game Preview 1 -->
+        <div class="game-preview">
+            <a href="game29.html">
+                <img src="game29.webp" alt="game 29">
+            </a>
+            <h2>Carrom King</h2>
+            <p>Most Fun Carrom Game online.</p>
+        </div>
+
+        <!-- Game Preview 2 -->
+        <div class="game-preview">
+            <a href="game20.html">
+                <img src="game20.webp" alt="game 20">
+            </a>
+            <h2>Rampage Racer</h2>
+            <p>Hard Racing Game ever</p>
+        </div>
+
+        <!-- Continue duplicating the above block as needed -->
+
+        <!-- Game Preview 3 -->
+        <div class="game-preview">
+            <a href="game30.html">
+                <img src="game30.webp" alt="game 30">
+            </a>
+            <h2>Candy Fiesta</h2>
+            <p>merge delicious candies and unlock beautiful new combos!.</p>
+        </div>
+
+        <!-- Game Preview 4 -->
+        <div class="game-preview">
+            <a href="game15.html">
+                <img src="game15.webp" alt="game 15">
+            </a>
+            <h2>Bottle Shoot</h2>
+            <p>Bring out the cowboy in you and keep a level head while you shoot down as many bottles as you can..</p>
+        </div>
+
+        <!-- Continue duplicating the above block as needed -->
+
+        <!-- Game Preview 5 -->
+        <div class="game-preview">
+            <a href="game25.html">
+                <img src="game25.webp" alt="game 25">
+            </a>
+            <h2>Tetris Challenge</h2>
+            <p>Classic block-matching puzzle fun.</p>
+        </div>
+
+        <!-- Game Preview 6 -->
+        <div class="game-preview">
+            <a href="game18.html">
+                <img src="game18.webp" alt="game 18">
+            </a>
+            <h2>Fruit Chop</h2>
+            <p>Swipe the screen to chop fruits but don't hit the bombs!.</p>
+        </div>
+
+        <!-- Continue duplicating the above block as needed -->
+
+        <!-- Game Preview 7 -->
+        <div class="game-preview">
+            <a href="game12.html">
+                <img src="game12.webp" alt="game 12">
+            </a>
+            <h2>Ludo With Friends</h2>
+            <p>Here's the best multiplayer ludo game! play with your friends fo with thousands of other players online.</p>
+        </div>
+
+        <!-- Game Preview 8 -->
+        <div class="game-preview">
+            <a href="game22.html">
+                <img src="game22.webp" alt="game 22">
+            </a>
+            <h2>Rocket League</h2>
+            <p>Soccer meets driving in this high-octane game.</p>
+        </div>
+
+        <!-- Continue duplicating the above block as needed -->
+
+        <!-- Game Preview 9 -->
+        <div class="game-preview">
+            <a href="game5.html">
+                <img src="game5.webp" alt="game 5">
+            </a>
+            <h2>Zombies Can't Jump 2</h2>
+            <p>Help the Mexican gunfighters pedro and juana to survive the attacks of bloodthirsty zombies.</p>
+        </div>
+
+        <!-- Game Preview 10 -->
+        <div class="game-preview">
+            <a href="game8.html">
+                <img src="game8.webp" alt="game 8">
+            </a>
+            <h2>Bowling Stars</h2>
+            <p>Enjoy the best Bowling game online - complete with thousands of players!.</p>
+        </div>
+        <!-- Game Preview 11 -->
+        <div class="game-preview">
+            <a href="game83.html">
+                <img src="game83.webp" alt="game 83">
+            </a>
+            <h2>Exoplanet Express</h2>
+            <p>How Difficult can carrying cargo be? find out in this surprisingly challenging space game!.</p>
+        </div>
+                <!-- Game Preview 12 -->
+                <div class="game-preview">
+                    <a href="game48.html">
+                        <img src="game48.webp" alt="game 48">
+                    </a>
+                    <h2>Car Flip</h2>
+                    <p>Drive a car on the road:change lanes as obstacles come your way.</p>
+                </div>
+                        <!-- Game Preview 13 -->
+        <div class="game-preview">
+            <a href="game31.html">
+                <img src="game31.webp" alt="game 31">
+            </a>
+            <h2>Pirate Hunt</h2>
+            <p>Protect your waters from the notorious pirates by hunting them one by one,.</p>
+        </div>
+                <!-- Game Preview 14 -->
+                <div class="game-preview">
+                    <a href="game38.html">
+                        <img src="game38.webp" alt="game 38">
+                    </a>
+                    <h2>Escape Run</h2>
+                    <p>Help the mountain man escape the eyes of media a while he peacefully runs in the cold.</p>
+                </div>
+                        <!-- Game Preview 15 -->
+        <div class="game-preview">
+            <a href="game25.html">
+                <img src="game25.webp" alt="game 8">
+            </a>
+            <h2>Soccer Wizard</h2>
+            <p>Bring out the soccer pro , play it like a wizard.unleash a volley of goals, rain it like a bizzard!.</p>
+        </div>
+                <!-- Game Preview 16 -->
+                <div class="game-preview">
+                    <a href="game40.html">
+                        <img src="game40.webp" alt="game 40">
+                    </a>
+                    <h2>Shape Smash</h2>
+                    <p>A stream of orbs , a trail of destruction.</p>
+                </div>
+                        <!-- Game Preview 17 -->
+        <div class="game-preview">
+            <a href="game35.html">
+                <img src="game35.webp" alt="game 35">
+            </a>
+            <h2>Sticky Goo</h2>
+            <p>Creepy spiders and bleak platforms leave no room for error as you set out to save your love!.</p>
+        </div>
+                <!-- Game Preview 18 -->
+                <div class="game-preview">
+                    <a href="game28.html">
+                        <img src="game28.webp" alt="game 28">
+                    </a>
+                    <h2>Pizza Dash</h2>
+                    <p>Pizza parties all around, dash through the traffic and deliver them time bound!.</p>
+                </div>
+        <!-- Continue duplicating the above block as needed -->
+
+        <!-- Add more game previews here -->
+
+        <!-- Game Previews End -->
+    </div>
+
+</body>
+
+</html>
